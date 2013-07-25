@@ -1,17 +1,6 @@
-# HTML5, CSS3 and JavaScript calculator
+# HTML5, CSS3 and JavaScript calculator *Created by c-eliasson, forked by fauverism*
 
-This was a small project we did just to play around with some of the 
-latest web tools, such as KnockoutJS. We wanted to design and build 
-something that looked clean, used no images and with a small amount of code.
-
-The result was a simple calculator built with pure CSS and a little bit
-of JavaScript and [Knockout](http://knockoutjs.com/) love.
-
-The calculator also has keyboard support through your keyboard numpad.
-
-## Demo
-We published [a demo](http://ideaviate.com/projects/calculator) where you can 
-try the calculator online. The demo is also included if you clone the repo.
+[https://github.com/Ideaviate/html5-css3-js-calculator/blob/master/README.md]Original README by c-eliasson
 
 ## License 
 Copyright (C) 2012 Ideaviate AB
