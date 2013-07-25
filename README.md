@@ -2,6 +2,10 @@
 
 [https://github.com/Ideaviate/html5-css3-js-calculator/blob/master/README.md]Original-README-by-c-eliasson
 
+##TODOS
+
+##DETAILS
+
 ## License 
 Copyright (C) 2012 Ideaviate AB
 
