@@ -75,7 +75,7 @@ var Calculator = function () {
                     break;
                 default:
                     sum = parseFloat(self.display(), 10);
-            };
+            }
         }
 
         // Avoid showing a result until you have at least
@@ -131,7 +131,7 @@ var Calculator = function () {
 // Apply knockout bindings
 ko.applyBindings(new Calculator());
 
-// Enable keyboard controll
+// Enable keyboard control
 (function () {
     // Key codes and their associated calculator buttons
     var calculatorKeys = {
@@ -185,7 +185,7 @@ ko.applyBindings(new Calculator());
             // Fire click event
             fireEvent(element, "click");
         }
-    }
+    };
 
     // Attach a keyup-event listener on the document
     if (document.addEventListener) {
