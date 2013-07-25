@@ -1,6 +1,6 @@
 # HTML5, CSS3 and JavaScript calculator *Created by c-eliasson, forked by fauverism*
 
-[https://github.com/Ideaviate/html5-css3-js-calculator/blob/master/README.md]Original README by c-eliasson
+[https://github.com/Ideaviate/html5-css3-js-calculator/blob/master/README.md]Original-README-by-c-eliasson
 
 ## License 
 Copyright (C) 2012 Ideaviate AB
