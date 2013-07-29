@@ -1,42 +1,39 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <title>Calculator</title>
     <link href="style.css" rel="stylesheet" />
 </head>
 <body class="body">
-
     <div class="calculator demo">
         <div class="u4 display">
             <div class="display-inner"><div class="display-text" data-bind="text: display"></div></div>
         </div>
-        <button id="calculator-button-M+" class="u1 button button-purple" data-bind="click: clear">MR</button>
-        <button id="calculator-button-M+" class="u1 button button-purple" data-bind="click: clear">M+</button>
-        <button id="calculator-button-MC" class="u1 button button-purple" data-bind="click: clear">MC</button>
-        <button id="calculator-button-ce" class="u1 button button-red" data-bind="click: clear">ce</button>
-        <button id="calculator-button-c" class="u1 button button-red" data-bind="click: clear">c</button>
-        <button id="calculator-button-squareroot" class="u1 button" data-bind="click: clear">&radic;</button>
-        <button id="calculator-button-backspace" class="u1 button button-backspace button-gray" data-bind="click: backspace">&#x21e4;</button>
-        <button id="calculator-button-negate" class="u1 button button-gray" data-bind="click: negate">&#xb1;</button>
-        <button id="calculator-button-÷" class="u1 button button-gray" data-bind="click: operator">÷</button>
+    	<button id="calculator-button-M+" class="u1 button button-gray" data-bind="click: operator">M+</button>
+		<button id="calculator-button-MR" class="u1 button button-gray" data-bind="click: operator">MR</button>
+		<button id="calculator-button-MC" class="u1 button button-gray" data-bind="click: operator">MC</button>
+		<button id="calculator-button-CE" class="u1 button button-gray" data-bind="click: clearDisplay">CE</button>
+		<button id="calculator-button-c" class="u1 button button-red" data-bind="click: clear">c</button>
         <button id="calculator-button-7" class="u1 button button-gray" data-bind="click: number">7</button>
         <button id="calculator-button-8" class="u1 button button-gray" data-bind="click: number">8</button>
         <button id="calculator-button-9" class="u1 button button-gray" data-bind="click: number">9</button>
         <button id="calculator-button-x" class="u1 button button-gray" data-bind="click: operator">x</button>
+		<button id="calculator-button--" class="u1 button button-gray" data-bind="click: operator">-</button>
         <button id="calculator-button-4" class="u1 button button-gray" data-bind="click: number">4</button>
         <button id="calculator-button-5" class="u1 button button-gray" data-bind="click: number">5</button>
         <button id="calculator-button-6" class="u1 button button-gray" data-bind="click: number">6</button>
-        <button id="calculator-button--" class="u1 button button-gray" data-bind="click: operator">-</button>
+		<button id="calculator-button-÷" class="u1 button button-gray" data-bind="click: operator">÷</button>
+		<button id="calculator-button-+" class="u1 button button-gray" data-bind="click: operator">+</button>
         <button id="calculator-button-1" class="u1 button button-gray" data-bind="click: number">1</button>
         <button id="calculator-button-2" class="u1 button button-gray" data-bind="click: number">2</button>
         <button id="calculator-button-3" class="u1 button button-gray" data-bind="click: number">3</button>
-        <button id="calculator-button-+" class="u1 button button-gray" data-bind="click: operator">+</button>
-        <button id="calculator-button-0" class="u2 button button-gray" data-bind="click: number">0</button>
+		<button id="calculator-button-root" class="u1 button button-gray" data-bind="click: operator">&#8730;</button>
+		<button id="calculator-button-negate" class="u1 button button-gray" data-bind="click: negate">+/-</button>
+		<button id="calculator-button-0" class="u1 button button-gray" data-bind="click: number">0</button>
         <button id="calculator-button-." class="u1 button button-gray" data-bind="click: number">.</button>
-        <button id="calculator-button-=" class="u1 button button-blue" data-bind="click: operator">=</button>            
+        <button id="calculator-button-=" class="u2 button button-blue" data-bind="click: operator">=</button>
     </div>
-    
+    <script src="knockout-2.1.0.js"></script>
     <script src="calculator.js"></script>
-
 </body>
 </html>
