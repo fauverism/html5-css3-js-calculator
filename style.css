@@ -1,4 +1,4 @@
-﻿
+
 /*  ################# 
  *	### CSS Reset ###
  *  ################# */
@@ -73,7 +73,16 @@ table {
     width: 132px;
 }
 .u4 {
-    width: 178px;
+    width: 224px;
+}
+.u5 {
+	clear: both;
+	float: right !important;
+	height: 64px;
+	margin: 0 3px 0 0;
+	position: relative;
+	top: -30px;
+	width: 41px;
 }
 
 .calculator {
@@ -87,7 +96,7 @@ table {
 	border: 1px solid #181A20;
 	float: left;
 	padding: 6px;
-	width: 184px;
+	width: 230px;
 }
 
 .display {
@@ -164,6 +173,7 @@ button::-moz-focus-inner {
 
 
 /* Button skins */
+/*TODO: make sure the + doesn't blow out the screen*/
 .button-gray {
 	-moz-box-shadow: inset 0px 1px #9498A3, 0 1px 1px #323643;
 	-webkit-box-shadow: inset 0px 1px #9498A3, 0 1px 1px #323643;
@@ -263,6 +273,12 @@ button::-moz-focus-inner {
 		background-image: none;
 		filter: progid:dximagetransform.microsoft.gradient(enabled=false);
 	}
+.button-purple {
 
+}
+.button-yellow {
 
+}
+.button-lightgray {
 
+}
