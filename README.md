@@ -2,7 +2,18 @@
 
 [https://github.com/Ideaviate/html5-css3-js-calculator/blob/master/README.md]Original-README-by-c-eliasson
 
-##TODOS
+##NEXT ACTIONS
+- read the code and disect
+  html
+	js
+- get root working
+
+#TODOs
+- convert from knockout to angluar
+- get root logic working
+- get the M+, MC, MR logic working
+- get the CE and C logic working
+-
 
 ##DETAILS
 
