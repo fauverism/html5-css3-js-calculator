@@ -124,8 +124,8 @@ table {
     float: right;
 }
 .display-inner {
-    width: 156px;
-    overflow: hidden;
+	overflow: hidden;
+	width: 200px;
 }
 .button {
 	-moz-border-radius: 3px;
@@ -170,6 +170,10 @@ button::-moz-focus-inner {
 	font-weight: normal;
 }
 
+.addition {
+	float: right;
+	height: 60px;
+}
 
 /* Button skins */
 /*TODO: make sure the + doesn't blow out the screen*/
@@ -273,11 +277,25 @@ button::-moz-focus-inner {
 		filter: progid:dximagetransform.microsoft.gradient(enabled=false);
 	}
 .button-purple {
-
-}
-.button-yellow {
-
-}
-.button-lightgray {
-
-}
+	background: #908aab; /* Old browsers */
+	background: -webkit-linear-gradient(top,  #9895A8 0%,#5a5671 100%); /* Chrome10+,Safari5.1+ */
+	}
+	.button-purple:hover {
+		background-color: #9591AA;
+		background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#9895A8), to(#776FA5));
+		background-image: -webkit-linear-gradient(top, #9895A8, #776FA5);
+		background-image: -o-linear-gradient(top, #9895A8, #776FA5);
+		background-image: linear-gradient(to bottom, #9895A8, #776FA5);
+		background-image: -moz-linear-gradient(top, #9895A8, #776FA5);
+		background-repeat: repeat-x;
+		filter: progid:dximagetransform.microsoft.gradient(startColorstr='#ff757985', endColorstr='#ff545867', GradientType=0);
+	}
+	.button-purple.active,
+	.button-purple:active {
+		-webkit-box-shadow: inset 0 1px 1px #14171E, 0px 1px #5E6370;
+		-moz-box-shadow: inset 0 1px 1px #14171E, 0px 1px #5E6370;
+		box-shadow: inset 0 1px 1px #14171E, 0px 1px #5E6370;
+		background-color: #292D3A;
+		background-image: none;
+		filter: progid:dximagetransform.microsoft.gradient(enabled=false);
+	}
