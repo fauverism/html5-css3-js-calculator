@@ -4,6 +4,7 @@ var Calculator = function () {
     var self = this,
         decimalMark = ".",
         sum = 0,
+        memoryValue = 0,
         prevOperator;
 
     // Define default values
@@ -32,14 +33,6 @@ var Calculator = function () {
         self.display(newValue);
     };
 
-    self.squareRoot = function () {
-        console.log('squareRoot');
-        this.operand = Math.sqrt(document.getElementById('calculator-button-root').innerText);
-        if (isNaN(this.operand)) this.operand = 0;
-        this.showop();
-        document.getElementById('calculator-button-root').focus();
-    };
-
     // Callback for each operator button
     self.operator = function (item, event) {
         var button = event.target.innerText;
@@ -60,9 +53,10 @@ var Calculator = function () {
             case "÷":
                 sum = sum / parseFloat(self.display(), 10);
                 break;
-            case "#":
-                //this.squareroot();
-                break;
+//            case "√":
+//                sum = sum / parseFloat(self.display(), 10);
+//                //TODO create the sqrt operator
+//                break;
             default:
                 sum = parseFloat(self.display(), 10);
             }
@@ -90,6 +84,17 @@ var Calculator = function () {
         self.display(newValue);
     };
 
+    //Callback for square root
+    self.squareRoot = function () {
+//           if(self.isShowingResult())
+
+//        console.log('squareRoot');
+//        this.operator = Math.sqrt(document.getElementById('display').innerText);
+//        if (isNaN(this.operand)) this.operand = 0;
+//        //this.showop();
+//        document.getElementById('calculator-button-root').focus();
+    };
+
     // Callback for each backspace button
     self.backspace = function (item, event) {
         // Disable backspace if the calculator is shown a result
@@ -115,6 +120,26 @@ var Calculator = function () {
     // Clear just the display
     self.clearDisplay = function () {
         self.display("0");
+    };
+
+    //Add to memory
+    self.addToMemory = function() {
+
+    };
+
+    //Recall memory
+    self.recallMemory = function() {
+//        this.operand = this.memoryValue; > find the memory value
+//        this.newop = true; > make sure it's using the right operand
+//        this.showop(); >
+//        document.getElementById('calc-equals').focus(); > puts the cursor back into place
+    };
+
+    //Clear memory
+    self.clearMemory = function() {
+        this.memoryValue = 0;
+        prevOperator = null;
+        self.clearDisplay();
     };
 
 };
@@ -169,23 +194,6 @@ ko.applyBindings(new Calculator());
         }
     }
 
-    // Helper functions to add/remove HTML-element classes
-    // as IE didn't support the classList property prior to IE10
-    function hasClass(ele, cls) {
-        return ele.className.match(new RegExp('(\\s|^)' + cls + '(\\s|$)'));
-    }
-
-    function addClass(ele, cls) {
-        if (!hasClass(ele, cls)) ele.className += " " + cls;
-    }
-
-    function removeClass(ele, cls) {
-        if (hasClass(ele, cls)) {
-            var reg = new RegExp('(\\s|^)' + cls + '(\\s|$)');
-            ele.className = ele.className.replace(reg, ' ');
-        }
-    }
-
     // Callback for every key stroke
     var keycallback = function (e) {
         // Check if the key was one of our calculator keys
@@ -207,12 +215,3 @@ ko.applyBindings(new Calculator());
         document.attachEvent('keyup', keycallback);
     }
 })();
-
-//From the previous calculator, this was inside of a switch statement
-//case "calc-mem-plus": this.addToMemory(); break;
-//case "calc-mem-recall": this.recallMemory(); break;
-//case "calc-mem-clear": this.clearMemory(); break;
-//case "calc-clear-entry": this.clearEntry(); break;
-//case "calc-clear-all": this.clearAll(); break;
-//case "calc-sqr-root": this.squareroot(); break;
-//case "calc-negate": this.negate(); break;
