@@ -1,3 +1,8 @@
+<!--
+	TODOs
+	TODO: make sure it retains the value of the last value in memory
+
+-->
 <!DOCTYPE html>
 <html>
 <head>
@@ -5,17 +10,17 @@
 	<link href="style.css" rel="stylesheet" />
 </head>
 <body class="body">
-<div class="calculator demo">
+<div class="calculator">
 	<div class="u4 display">
 		<div class="display-inner">
-			<div class="display-text" data-bind="text: display"></div>
+			<div id="display" class="display-text" data-bind="text: display"></div>
 		</div>
 	</div>
-	<button id="calculator-button-M+" class="u1 button button-gray" data-bind="click: operator">M+</button>
-	<button id="calculator-button-MR" class="u1 button button-gray" data-bind="click: operator">MR</button>
-	<button id="calculator-button-MC" class="u1 button button-gray" data-bind="click: operator">MC</button>
-	<button id="calculator-button-CE" class="u1 button button-gray" data-bind="click: clearDisplay">CE</button>
-	<button id="calculator-button-c" class="u1 button button-red" data-bind="click: clear">c</button>
+	<button id="calculator-button-M+" class="u1 button button-purple" data-bind="click: addToMemory">M+</button>
+	<button id="calculator-button-MR" class="u1 button button-purple" data-bind="click: recallMemory">MR</button>
+	<button id="calculator-button-MC" class="u1 button button-purple" data-bind="click: clearMemory">MC</button>
+	<button id="calculator-button-CE" class="u1 button button-red" data-bind="click: clearDisplay">CE</button>
+	<button id="calculator-button-c" class="u1 button button-red" data-bind="click: clear">C</button>
 	<button id="calculator-button-7" class="u1 button button-gray" data-bind="click: number">7</button>
 	<button id="calculator-button-8" class="u1 button button-gray" data-bind="click: number">8</button>
 	<button id="calculator-button-9" class="u1 button button-gray" data-bind="click: number">9</button>
@@ -25,11 +30,11 @@
 	<button id="calculator-button-5" class="u1 button button-gray" data-bind="click: number">5</button>
 	<button id="calculator-button-6" class="u1 button button-gray" data-bind="click: number">6</button>
 	<button id="calculator-button-÷" class="u1 button button-gray" data-bind="click: operator">÷</button>
-	<button id="calculator-button-+" class="u1 button button-gray" data-bind="click: operator">+</button>
+	<button id="calculator-button-+" class="u1 button button-gray addition" data-bind="click: operator">+</button>
 	<button id="calculator-button-1" class="u1 button button-gray" data-bind="click: number">1</button>
 	<button id="calculator-button-2" class="u1 button button-gray" data-bind="click: number">2</button>
 	<button id="calculator-button-3" class="u1 button button-gray" data-bind="click: number">3</button>
-	<button id="calculator-button-root" class="u1 button button-gray" data-bind="click: operator">&#8730;</button>
+	<button id="calculator-button-root" class="u1 button button-gray" data-bind="click: squareRoot">&#8730;</button>
 	<button id="calculator-button-negate" class="u1 button button-gray" data-bind="click: negate">+/-</button>
 	<button id="calculator-button-0" class="u1 button button-gray" data-bind="click: number">0</button>
 	<button id="calculator-button-." class="u1 button button-gray" data-bind="click: number">.</button>
