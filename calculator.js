@@ -4,7 +4,7 @@ var Calculator = function () {
     var self = this,
         decimalMark = ".",
         sum = 0,
-        memoryValue = 0,
+        //memoryValue = 0,
         prevOperator;
 
     // Define default values
@@ -50,13 +50,9 @@ var Calculator = function () {
             case "x":
                 sum = sum * parseFloat(self.display(), 10);
                 break;
-            case "&#247;":
+            case "/":
                 sum = sum / parseFloat(self.display(), 10);
                 break;
-//            case "√":
-//                sum = sum / parseFloat(self.display(), 10);
-//                //TODO create the sqrt operator
-//                break;
             default:
                 sum = parseFloat(self.display(), 10);
             }
@@ -85,14 +81,15 @@ var Calculator = function () {
     };
 
     //Callback for square root
-    self.squareRoot = function () {
-//           if(self.isShowingResult())
-
-//        console.log('squareRoot');
-//        this.operator = Math.sqrt(document.getElementById('display').innerText);
-//        if (isNaN(this.operand)) this.operand = 0;
-//        //this.showop();
-//        document.getElementById('calculator-button-root').focus();
+    self.squareRoot = function (item, event) {
+        var button = event.target.innerText;
+        // Only perform calculation if numbers
+        // has been entered since last operator button was pressed
+        if (!self.isShowingResult()) {
+            // Perform calculation
+            var sqroot = Math.sqrt(self.display());
+            self.display(sqroot);
+        }
     };
 
     // Callback for each backspace button
@@ -124,6 +121,15 @@ var Calculator = function () {
 
     //Add to memory
     self.addToMemory = function() {
+        var newValue = document.getElementById('display');
+        if(isNaN(newValue)) newValue = 0;
+        //this.memoryValue += newValue;
+        //this.operator(true);
+        if (this.memoryValue)
+            document.getElementById('display').className = "mem";
+        else
+            document.getElementById('display').className = "";
+            document.getElementById('calculator-button-=').focus();
 
     };
 
