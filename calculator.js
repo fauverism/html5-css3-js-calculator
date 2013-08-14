@@ -50,7 +50,7 @@ var Calculator = function () {
             case "x":
                 sum = sum * parseFloat(self.display(), 10);
                 break;
-            case "÷":
+            case "&#247;":
                 sum = sum / parseFloat(self.display(), 10);
                 break;
 //            case "√":
@@ -175,7 +175,7 @@ ko.applyBindings(new Calculator());
         107: "+",
         109: "-",
         110: ".",
-        111: "÷",
+        111: "&#247;",
         8: "backspace",
         13: "=",
         46: "c"
