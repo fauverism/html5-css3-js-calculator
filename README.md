@@ -5,14 +5,13 @@ https://github.com/Ideaviate/html5-css3-js-calculator/blob/master/README.md
 
 ###Details
 
-- Square Root Button added
-
+- Square Root and CE added
 
 ###TODOs
 
 - convert from knockout to angluar
 - get the M+, MC, MR logic working
-
+- get memory functioning properly
 
 ---
 
