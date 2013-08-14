@@ -8,12 +8,10 @@ https://github.com/Ideaviate/html5-css3-js-calculator/blob/master/README.md
 - Square Root Button added
 
 
-####TODOs
+###TODOs
 
 - convert from knockout to angluar
-<strike>- get root logic working</strike>
 - get the M+, MC, MR logic working
-<strike>get the CE and C logic working</strike>
 
 
 ---
