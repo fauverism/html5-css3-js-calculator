@@ -1,23 +1,19 @@
-# HTML5, CSS3 and JavaScript calculator *Created by c-eliasson, forked by fauverism*
+# HTML5, CSS3 and JavaScript calculator
+####*Created by c-eliasson, forked by fauverism*
+https://github.com/Ideaviate/html5-css3-js-calculator/blob/master/README.md
 
-[https://github.com/Ideaviate/html5-css3-js-calculator/blob/master/README.md]Original-README-by-c-eliasson
-
-##NEXT ACTIONS
-- read the code and disect
-  html
-	js
-- get root working
-
-#TODOs
-- convert from knockout to angluar
-- get root logic working
-- get the M+, MC, MR logic working
-- get the CE and C logic working
+##Additional functionality
+- Square Root Button
 -
 
-##DETAILS
+####TODOs
+- convert from knockout to angluar
+<strike>- get root logic working</strike>
+- get the M+, MC, MR logic working
+<strike>get the CE and C logic working</strike>
 
-## License 
+
+#### License 
 Copyright (C) 2012 Ideaviate AB
 
 Permission is hereby granted, free of charge, to any person obtaining a copy 
